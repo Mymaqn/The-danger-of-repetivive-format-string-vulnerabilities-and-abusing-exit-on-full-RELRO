@@ -318,7 +318,7 @@ arb_write_64(testaddr,0xff00ff00ff30ff01)
 ```
 
 As can be seen from the screenshot below, the write was succesful:
-![64_bit_write_test](images/64_bit_write_test.png)
+![64_bit_write_test](images/64bit_write_test.png)
 
 ### Step 4, messing with exit and linker
 
