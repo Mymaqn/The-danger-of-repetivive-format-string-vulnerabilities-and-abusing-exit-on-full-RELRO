@@ -332,7 +332,7 @@ The exit internals calls a function called `run_exit_handlers`, which calls `dl_
 `rtld_lock_default_lock_recursive` is a function inside of GLIBC, which is found in a readable and writable section of the linker. If we overwrite the address of where this is found, we can gain RIP control.
 
 The function is loaded and called at `dl_fini+105` in this version of libc, but may differ dependent on libc version. We can find the address of where the function is loaded from, inside the linker, by checking what is located at the RIP relative call address:
-![rtld_lock_default_lock_recursive](rtld)
+![rtld_lock_default_lock_recursive](images/rtld.png)
 
 We can then calculate what we need to add to the base address of libc, to get this offset. This is only possible, because the linker is always directly adjacent to the last page of libc.
 
