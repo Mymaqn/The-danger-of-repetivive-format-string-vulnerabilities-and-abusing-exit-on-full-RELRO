@@ -28,15 +28,14 @@ When using a format specifier, printf will start printing values out, in order o
 
 In the case of Linux on x86_64 this would be the following (in order):
 
-1. RDI
-2. RSI
-3. RDX
-4. R10
-5. R8
-6. R9
-7. [RSP]
-8. [RSP+8]
-9. etc.
+1. RSI
+2. RDX
+3. R10
+4. R8
+5. R9
+6. [RSP]
+7. [RSP+8]
+8. etc.
 
 In case of x86 on Linux, where all parameters are passed on the stack to printf, it would just be stack values which would be printed.
 
