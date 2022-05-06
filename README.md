@@ -102,7 +102,8 @@ If the binary is eager-loaded, the linker will resolve all functions in the shar
 
 A function graph of how the PLT and GOT works can be seen here:
 ![procedural_linkage_table](images/plt_before.png)
-Source: https://eli.thegreenplace.net/2011/11/03/position-independent-code-pic-in-shared-libraries/
+
+**Source: https://eli.thegreenplace.net/2011/11/03/position-independent-code-pic-in-shared-libraries/**
 
 If eager-loading has been specified at compile time, the binary's GOT will often be read-only (as there is no reason for it to be read and writable), although this is not always the case.
 
