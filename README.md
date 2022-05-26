@@ -30,7 +30,7 @@ In the case of Linux on x86_64 this would be the following (in order):
 
 1. RSI
 2. RDX
-3. R10
+3. RCX
 4. R8
 5. R9
 6. [RSP]
